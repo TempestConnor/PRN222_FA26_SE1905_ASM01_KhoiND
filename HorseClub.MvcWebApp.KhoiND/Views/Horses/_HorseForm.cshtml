@@ -1,0 +1,72 @@
+@model Horse
+@* Shared fields for Create and Edit. The parent view supplies the <form>. *@
+
+<div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+<div class="row g-3">
+    <div class="col-md-6">
+        <label asp-for="Name" class="form-label">Name *</label>
+        <input asp-for="Name" class="form-control" maxlength="150" />
+        <span asp-validation-for="Name" class="text-danger small"></span>
+    </div>
+    <div class="col-md-6">
+        <label asp-for="OwnerId" class="form-label">Owner *</label>
+        <select asp-for="OwnerId" class="form-select" asp-items="ViewBag.OwnerId">
+            <option value="">-- Select owner --</option>
+        </select>
+        <span asp-validation-for="OwnerId" class="text-danger small"></span>
+    </div>
+
+    <div class="col-md-6">
+        <label asp-for="MicrochipNo" class="form-label">Microchip No *</label>
+        <input asp-for="MicrochipNo" class="form-control" maxlength="30" />
+        <span asp-validation-for="MicrochipNo" class="text-danger small"></span>
+    </div>
+    <div class="col-md-6">
+        <label asp-for="PassportNo" class="form-label">Passport No</label>
+        <input asp-for="PassportNo" class="form-control" maxlength="50" />
+        <span asp-validation-for="PassportNo" class="text-danger small"></span>
+    </div>
+
+    <div class="col-md-4">
+        <label asp-for="Sex" class="form-label">Sex *</label>
+        <select asp-for="Sex" class="form-select" asp-items="ViewBag.Sex"></select>
+        <span asp-validation-for="Sex" class="text-danger small"></span>
+    </div>
+    <div class="col-md-4">
+        <label asp-for="BirthDate" class="form-label">Birth date *</label>
+        <input asp-for="BirthDate" class="form-control" />
+        <span asp-validation-for="BirthDate" class="text-danger small"></span>
+    </div>
+    <div class="col-md-4">
+        <label asp-for="Status" class="form-label">Status *</label>
+        <select asp-for="Status" class="form-select" asp-items="ViewBag.Status"></select>
+        <span asp-validation-for="Status" class="text-danger small"></span>
+    </div>
+
+    <div class="col-md-6">
+        <label asp-for="Breed" class="form-label">Breed</label>
+        <input asp-for="Breed" class="form-control" maxlength="100" />
+        <span asp-validation-for="Breed" class="text-danger small"></span>
+    </div>
+    <div class="col-md-6">
+        <label asp-for="Color" class="form-label">Color</label>
+        <input asp-for="Color" class="form-control" maxlength="50" />
+        <span asp-validation-for="Color" class="text-danger small"></span>
+    </div>
+
+    <div class="col-md-6">
+        <label asp-for="SireId" class="form-label">Sire (father)</label>
+        <select asp-for="SireId" class="form-select" asp-items="ViewBag.SireId">
+            <option value="">-- None / unknown --</option>
+        </select>
+        <span asp-validation-for="SireId" class="text-danger small"></span>
+    </div>
+    <div class="col-md-6">
+        <label asp-for="DamId" class="form-label">Dam (mother)</label>
+        <select asp-for="DamId" class="form-select" asp-items="ViewBag.DamId">
+            <option value="">-- None / unknown --</option>
+        </select>
+        <span asp-validation-for="DamId" class="text-danger small"></span>
+    </div>
+</div>

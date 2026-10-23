@@ -1,0 +1,25 @@
+@model Horse
+@{
+    ViewData["Title"] = "Edit horse";
+}
+
+<h1>Edit horse</h1>
+<hr />
+
+<form asp-action="Edit" method="post">
+    @* Columns the form doesn't show but the update must keep. *@
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="CreatedAt" />
+    <input type="hidden" asp-for="CreatedBy" />
+
+    <partial name="_HorseForm" model="Model" />
+
+    <div class="mt-4 d-flex gap-2">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a asp-action="Index" class="btn btn-outline-secondary">Back to list</a>
+    </div>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

@@ -1,0 +1,22 @@
+@model Horse
+@{
+    ViewData["Title"] = "Delete horse";
+}
+
+<h1>Delete horse</h1>
+
+@if (ViewData["Error"] != null)
+{
+    <div class="alert alert-danger" role="alert">@ViewData["Error"]</div>
+}
+
+<p class="lead">Are you sure you want to delete <strong>@Model.Name</strong>?</p>
+<hr />
+
+<partial name="_HorseDetails" model="Model" />
+
+<form asp-action="Delete" method="post" class="d-flex gap-2">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-outline-secondary">Back to list</a>
+</form>

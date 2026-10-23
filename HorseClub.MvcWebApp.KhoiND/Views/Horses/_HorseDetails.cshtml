@@ -1,0 +1,43 @@
+@model Horse
+@* Read-only field list shared by Details and Delete. *@
+
+<dl class="row">
+    <dt class="col-sm-3">Name</dt>
+    <dd class="col-sm-9">@Model.Name</dd>
+
+    <dt class="col-sm-3">Microchip No</dt>
+    <dd class="col-sm-9">@Model.MicrochipNo</dd>
+
+    <dt class="col-sm-3">Passport No</dt>
+    <dd class="col-sm-9">@Model.PassportNo</dd>
+
+    <dt class="col-sm-3">Sex</dt>
+    <dd class="col-sm-9">@((HorseSex)Model.Sex)</dd>
+
+    <dt class="col-sm-3">Birth date</dt>
+    <dd class="col-sm-9">@Model.BirthDate.ToString("yyyy-MM-dd")</dd>
+
+    <dt class="col-sm-3">Status</dt>
+    <dd class="col-sm-9">@((HorseStatus)Model.Status)</dd>
+
+    <dt class="col-sm-3">Breed</dt>
+    <dd class="col-sm-9">@Model.Breed</dd>
+
+    <dt class="col-sm-3">Color</dt>
+    <dd class="col-sm-9">@Model.Color</dd>
+
+    <dt class="col-sm-3">Owner</dt>
+    <dd class="col-sm-9">@Model.Owner?.FullName</dd>
+
+    <dt class="col-sm-3">Sire</dt>
+    <dd class="col-sm-9">@Model.Sire?.Name</dd>
+
+    <dt class="col-sm-3">Dam</dt>
+    <dd class="col-sm-9">@Model.Dam?.Name</dd>
+
+    <dt class="col-sm-3">Created (UTC)</dt>
+    <dd class="col-sm-9">@Model.CreatedAt.ToString("yyyy-MM-dd HH:mm")</dd>
+
+    <dt class="col-sm-3">Updated (UTC)</dt>
+    <dd class="col-sm-9">@Model.UpdatedAt?.ToString("yyyy-MM-dd HH:mm")</dd>
+</dl>

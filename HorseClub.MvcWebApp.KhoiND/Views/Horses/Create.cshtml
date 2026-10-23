@@ -1,0 +1,20 @@
+@model Horse
+@{
+    ViewData["Title"] = "New horse";
+}
+
+<h1>New horse</h1>
+<hr />
+
+<form asp-action="Create" method="post">
+    <partial name="_HorseForm" model="Model" />
+
+    <div class="mt-4 d-flex gap-2">
+        <button type="submit" class="btn btn-primary">Create</button>
+        <a asp-action="Index" class="btn btn-outline-secondary">Back to list</a>
+    </div>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

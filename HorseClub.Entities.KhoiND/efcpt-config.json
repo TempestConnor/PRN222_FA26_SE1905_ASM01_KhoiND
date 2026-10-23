@@ -21,21 +21,21 @@
     "use-internal-access-modifiers-for-sprocs-and-functions": false,
     "use-legacy-inflector": false,
     "use-many-to-many-entity": false,
-    "use-nullable-reference-types": true,
+    "use-nullable-reference-types": false,
     "use-prefix-navigation-naming": false,
     "use-typed-tvp-parameters": true,
     "use-t4": false,
     "use-t4-split": false
   },
   "file-layout": {
-    "output-dbcontext-path": null,
+    "output-dbcontext-path": "../HorseClub.Repositories.KhoiND/DBContext",
     "output-path": "Models"
   },
   "names": {
-    "dbcontext-name": "HorseClubContext",
-    "dbcontext-namespace": null,
-    "model-namespace": null,
-    "root-namespace": "HorseClub.Entities.KhoiND"
+    "dbcontext-name": "HorseClubDBContext",
+    "dbcontext-namespace": "Repositories.KhoiND",
+    "model-namespace": "Entities.KhoiND.Models",
+    "root-namespace": "HorseClub"
   },
   "tables": [
     {

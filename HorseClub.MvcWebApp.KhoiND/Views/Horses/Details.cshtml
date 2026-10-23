@@ -1,0 +1,14 @@
+@model Horse
+@{
+    ViewData["Title"] = "Horse details";
+}
+
+<h1>@Model.Name</h1>
+<hr />
+
+<partial name="_HorseDetails" model="Model" />
+
+<div class="d-flex gap-2">
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+    <a asp-action="Index" class="btn btn-outline-secondary">Back to list</a>
+</div>

@@ -17,7 +17,7 @@ Add these NuGet packages to your .csproj based on your selections:
 1. Register your DbContext class in your "Program.cs" file.
 
     ```csharp
-    builder.Services.AddDbContext<HorseClubContext>(
+    builder.Services.AddDbContext<HorseClubDBContext>(
         options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
     ```
 
