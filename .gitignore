@@ -480,3 +480,8 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+# Build results
+[Bb]in/
+[Oo]bj/
+.vs/
