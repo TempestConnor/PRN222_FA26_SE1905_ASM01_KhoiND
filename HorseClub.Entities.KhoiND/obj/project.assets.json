@@ -1739,11 +1739,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\PRN221\\PRN222_FA26_SE1905_ASM01_KhoiND\\HorseClub.Entities.KhoiND\\HorseClub.Entities.KhoiND.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\PRN222\\ASSIGNMENT 01\\HorseClub.Entities.KhoiND\\HorseClub.Entities.KhoiND.csproj",
       "projectName": "HorseClub.Entities.KhoiND",
-      "projectPath": "C:\\Users\\ADMIN\\Desktop\\PRN221\\PRN222_FA26_SE1905_ASM01_KhoiND\\HorseClub.Entities.KhoiND\\HorseClub.Entities.KhoiND.csproj",
+      "projectPath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\ASSIGNMENT 01\\HorseClub.Entities.KhoiND\\HorseClub.Entities.KhoiND.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\Desktop\\PRN221\\PRN222_FA26_SE1905_ASM01_KhoiND\\HorseClub.Entities.KhoiND\\obj\\",
+      "outputPath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\ASSIGNMENT 01\\HorseClub.Entities.KhoiND\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1758,6 +1758,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1777,7 +1778,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.400"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net10.0": {
@@ -1809,7 +1810,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

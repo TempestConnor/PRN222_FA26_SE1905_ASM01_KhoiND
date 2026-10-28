@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GzSkY2MpZpA=",
+  "dgSpecHash": "UKMV7bBnlTo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\PRN221\\PRN222_FA26_SE1905_ASM01_KhoiND\\HorseClub.MvcWebApp.KhoiND\\HorseClub.MvcWebApp.KhoiND.csproj",
+  "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\ASSIGNMENT 01\\HorseClub.MvcWebApp.KhoiND\\HorseClub.MvcWebApp.KhoiND.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",

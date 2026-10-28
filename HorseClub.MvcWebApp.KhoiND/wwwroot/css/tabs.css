@@ -1,0 +1,87 @@
+/* Glider tabs: From Uiverse.io by Pradeepsaranbishnoi - Tags: radio (MIT License)
+   https://uiverse.io/Pradeepsaranbishnoi/heavy-dragonfly-92
+   https://github.com/uiverse-io/galaxy/blob/main/Radio-buttons/Pradeepsaranbishnoi_heavy-dragonfly-92.html
+
+   Changes from the original:
+   - .container renamed to .tabs-container (Bootstrap already uses .container)
+   - six tabs instead of three, ids renamed radio-N -> tab-radio-N
+   - tabs widened from 50px to 110px to fit the labels; .tabs is inline-flex so the
+     white pill wraps the tabs instead of stretching across the page
+   - notification badge removed
+   - on narrow screens the bar scrolls sideways instead of being scaled to 0.6 */
+
+.tabs-container {
+  overflow-x: auto;
+  padding: 4px 4px 12px;
+  margin-bottom: 1rem;
+}
+
+.tabs {
+  display: inline-flex;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+  padding: 0.75rem;
+  border-radius: 99px;
+}
+
+.tabs * {
+  z-index: 2;
+}
+
+.tabs-container input[type="radio"] {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 110px;
+  font-size: .8rem;
+  color: black;
+  font-weight: 500;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+}
+
+.tabs-container input[type="radio"]:checked + label {
+  color: #185ee0;
+}
+
+.tabs-container input[id="tab-radio-1"]:checked ~ .glider {
+  transform: translateX(0);
+}
+
+.tabs-container input[id="tab-radio-2"]:checked ~ .glider {
+  transform: translateX(100%);
+}
+
+.tabs-container input[id="tab-radio-3"]:checked ~ .glider {
+  transform: translateX(200%);
+}
+
+.tabs-container input[id="tab-radio-4"]:checked ~ .glider {
+  transform: translateX(300%);
+}
+
+.tabs-container input[id="tab-radio-5"]:checked ~ .glider {
+  transform: translateX(400%);
+}
+
+.tabs-container input[id="tab-radio-6"]:checked ~ .glider {
+  transform: translateX(500%);
+}
+
+.glider {
+  position: absolute;
+  display: flex;
+  height: 30px;
+  width: 110px;
+  background-color: #e6eef9;
+  z-index: 1;
+  border-radius: 99px;
+  transition: 0.25s ease-out;
+}

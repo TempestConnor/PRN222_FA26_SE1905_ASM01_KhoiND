@@ -3209,11 +3209,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\PRN221\\PRN222_FA26_SE1905_ASM01_KhoiND\\HorseClub.MvcWebApp.KhoiND\\HorseClub.MvcWebApp.KhoiND.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\PRN222\\ASSIGNMENT 01\\HorseClub.MvcWebApp.KhoiND\\HorseClub.MvcWebApp.KhoiND.csproj",
       "projectName": "HorseClub.MvcWebApp.KhoiND",
-      "projectPath": "C:\\Users\\ADMIN\\Desktop\\PRN221\\PRN222_FA26_SE1905_ASM01_KhoiND\\HorseClub.MvcWebApp.KhoiND\\HorseClub.MvcWebApp.KhoiND.csproj",
+      "projectPath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\ASSIGNMENT 01\\HorseClub.MvcWebApp.KhoiND\\HorseClub.MvcWebApp.KhoiND.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\Desktop\\PRN221\\PRN222_FA26_SE1905_ASM01_KhoiND\\HorseClub.MvcWebApp.KhoiND\\obj\\",
+      "outputPath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\ASSIGNMENT 01\\HorseClub.MvcWebApp.KhoiND\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3228,6 +3228,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3235,11 +3236,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\ADMIN\\Desktop\\PRN221\\PRN222_FA26_SE1905_ASM01_KhoiND\\HorseClub.Entities.KhoiND\\HorseClub.Entities.KhoiND.csproj": {
-              "projectPath": "C:\\Users\\ADMIN\\Desktop\\PRN221\\PRN222_FA26_SE1905_ASM01_KhoiND\\HorseClub.Entities.KhoiND\\HorseClub.Entities.KhoiND.csproj"
+            "C:\\Users\\ADMIN\\Desktop\\PRN222\\ASSIGNMENT 01\\HorseClub.Entities.KhoiND\\HorseClub.Entities.KhoiND.csproj": {
+              "projectPath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\ASSIGNMENT 01\\HorseClub.Entities.KhoiND\\HorseClub.Entities.KhoiND.csproj"
             },
-            "C:\\Users\\ADMIN\\Desktop\\PRN221\\PRN222_FA26_SE1905_ASM01_KhoiND\\HorseClub.Services.KhoiND\\HorseClub.Services.KhoiND.csproj": {
-              "projectPath": "C:\\Users\\ADMIN\\Desktop\\PRN221\\PRN222_FA26_SE1905_ASM01_KhoiND\\HorseClub.Services.KhoiND\\HorseClub.Services.KhoiND.csproj"
+            "C:\\Users\\ADMIN\\Desktop\\PRN222\\ASSIGNMENT 01\\HorseClub.Services.KhoiND\\HorseClub.Services.KhoiND.csproj": {
+              "projectPath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\ASSIGNMENT 01\\HorseClub.Services.KhoiND\\HorseClub.Services.KhoiND.csproj"
             }
           }
         }
@@ -3254,7 +3255,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.400"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net10.0": {
@@ -3287,7 +3288,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

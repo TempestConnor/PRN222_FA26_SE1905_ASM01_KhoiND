@@ -1,0 +1,40 @@
+@model List<Owner>
+@{
+    ViewData["Title"] = "Owners";
+}
+
+<h1 class="mb-3">Owners</h1>
+
+@if (Model.Count == 0)
+{
+    <div class="alert alert-info">No owners found.</div>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-striped table-hover align-middle">
+            <thead>
+                <tr>
+                    <th>Full name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Horses</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.FullName</td>
+                        <td>@item.Phone</td>
+                        <td>@item.Email</td>
+                        <td>@item.Address</td>
+                        <td>@item.Horses.Count(h => !h.IsDeleted)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <p class="text-muted small">@Model.Count owner(s)</p>
+}
